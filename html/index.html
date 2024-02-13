@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,145 @@
     <link rel="stylesheet" href="../styles/download.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <script src="../js/index.js" defer></script>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <main class="main__container">
-        <section class="header">Header</section>
-        <section class="hero">
-
+        <section class="header">
+            <header class="custom-header">
+                <div class="header-content">
+                    <div class="logo-container">
+                        <!-- Replace this with your actual logo image -->
+                        <img src="../assets/logo.png" alt="Company Logo" height="40px">
+                    </div>
+                    <nav>
+                        <ul class="header-menu">
+                            <li><a href="#" class="header-link">Features</a></li>
+                            <li><a href="#" class="header-link">Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
         </section>
-        <section class="services">Services</section>
-        <section class="download">Download</section>
-        <section class="footer">Footer</section>
+        <section class="hero">
+            <div class="hero_textcontainer">
+                <h1 class="hero__text__heading">Connect Globally Talk Locally</h1>
+                <p class="hero__text__subheading">Break Language barriers with translation of any language into your native
+                    tongue.</p>
+                <div class="text__linkcontainer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/google-play-badge.png" alt="google-play-badge" class="link__store">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/ios-badge.png" alt="app-store-badge" class="link__store"></a>
+                </div>
+            </div>
+            <div class="hero__images">
+                <div class="hero__images__container">
+                    <img src="../assets/herobg.png" alt="hero bg" class="hero__bg">
+                    <img src="../assets/iphone1.png" alt="iphone" class="hero__iphone1">
+                    <img src="../assets/iphone2.png" alt="iphone" class="hero__iphone2">
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__text">
+                <p class="text__heading">We empower <span class="heading_span">global communication</span> by <br/>
+                    breaking down language barriers</p>
+                <p class="text__subheading">Break language barriers with translation of any language into your native
+                    tongue.</p>
+            </div>
+            <div class="services__overview">
+                <img src="../assets/services-path.png" alt="hero bg" class="overview__path" />
+                <img src="../assets/discuss.png" alt="hero bg" class="overview__logo__discuss" />
+                <img src="../assets/conversation.png" alt="hero bg" class="overview__logo__conv" />
+                <img src="../assets/global.png" alt="hero bg" class="overview__logo__global" />
+
+                <div class="overview__container">
+                    <div class="overview__card">
+                        <div class="card__text">
+                            <h1 class="card__heading">Discourse in your language</h1>
+                            <h5 class="card__subheading">Engage in meaningful conversations and interact in your
+                                preferred language.</h5>
+                        </div>
+                        <img src="../assets/discuss_svg.png" alt="discourse bg" class="card__img" />
+                    </div>
+                    <div class="overview__card1">
+                        <img src="../assets/conv_versatility_img.png" alt="conversation bg" class="card__conv__img conv__img-margin" />
+                        <div class="card__text1">
+                            <h1 class="card__heading">Conversational versatility</h1>
+                            <h5 class="card__subheading">Initiate calls in your language with anyone for an inclusive exchange.</h5>
+                        </div>
+                    </div>
+                    <div class="overview__card2">
+                        <div class="card__text2">
+                            <h1 class="card__heading">Speak the global language</h1>
+                            <h5 class="card__subheading">Elevate your interactions with clear communication in your language.</h5>
+                        </div>
+                        <img src="../assets/global_lang_img.png" alt="global lang bg" class="card__lang__img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="download">
+            <div class="section-content">
+                <h1>Download the app</h1>
+                <p>Simply enter your mobile number to get the exclusive download link</p>
+                <form>
+                    <input type="text" name="mobile-number" id="mobile-number" placeholder="Enter mobile number" class="mobile__number__input">
+                    <button type="submit">Send SMS</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <ul>
+                        <li class="bold">Company</li>
+                        <li class="footer-item">About</li>
+                        <li class="footer-item">Features</li>
+                        <li class="footer-item">Support</li>
+                    </ul>
+                </div>
+                <div class="footer-content right-section">
+                    <div class="right-top-section">
+                        <span class="bold">Connect with us</span>
+                        <div class="img-section">
+                            <li><img src="../assets/instagram.png" alt="social-logo" /></li>
+                            <li><img src="../assets/linkedin.png" alt="social-logo" /></li>
+                            <li><img src="../assets/twitter.png" alt="social-logo" /></li>
+                        </div>
+                    </div>
+                    <div class="right-bottom-section">
+                        <span class="bold">Download the app</span>
+                        <div class="get-it-section">
+                            <li><img src="../assets/ios-badge.png" alt="google-play-badge" width="100px" /></li>
+                            <li><img src="../assets/google-play-badge.png" alt="google-play-badge" width="112px" /></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="bottom-footer">
+                <div class="bf-left">
+                    <img src="../assets/group.png" width="30px" />
+                    <span>Copyright © 2024 Reliance Jio Infocomm Ltd. All rights reserved</span>
+                </div>
+                <div class="bf-right">
+                    <ul>
+                        <li>Regulatory</li>
+                        <li>|</li>
+                        <li>Policies</li>
+                        <li>|</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
+
 </html>
