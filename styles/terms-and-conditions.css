@@ -26,6 +26,7 @@
 
 .terms__heading{
     font-weight: 900;
+    font-size: 24px;
 }
 
 .gap__10{
@@ -51,4 +52,15 @@ h5{
 
 .list__style__alpha{
     list-style-type: lower-alpha;
+}
+
+@media (max-width: 630px) and (min-width: 0) {
+    .terms{
+        margin: auto 15px;
+        gap: 20px;
+    }
+    .terms__h1 {
+        margin: 35px auto;
+        font-size: 30px;
+    }
 }
