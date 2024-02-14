@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* services section start */
+
+.services {
+    margin: 50px 0;
+}
+
+.services__text {
+    max-width: 850px;
+    margin: 50px auto;
+    text-align: center;
+}
+.text__heading {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+
+.text__subheading {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000A6;
+}
+
+.services__overview {
+    min-height: 100vh;
+    margin: 125px 0;
+    position: relative;
+}
+
+.overview__path {
+    position: absolute;
+    left: 6%;
+    height: 100%;
+    max-height: 1090px;
+    z-index: -10;
+}
+
+.overview__container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.overview__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+    flex-wrap: wrap;
+}
+
+.card__text {
+    max-width: 25%;
+    margin-top: -15%;
+}
+
+
+.card__img {
+    width: 100%;
+    max-width: 40%;
+}
+
+.card__heading {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.card__subheading {
+    font-size: 16px;
+    color: #000000A6;
+    margin-top: 10px;
+}
+
+.overview__card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+    flex-wrap: wrap;
+}
+
+.card__text1 {
+    max-width: 25%;
+    margin-top: -15%;
+    margin-left: 20%;
+}
+
+.card__img1 {
+    width: 100%;
+    max-width: 40%;
+}
+
+.overview__card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+    flex-wrap: wrap;
+}
+
+.card__text2 {
+    max-width: 25%;
+    margin-top: -15%;
+    margin-left: 20%;
+}
+
+.card__img2 {
+    width: 100%;
+    max-width: 40%;
+}
+
+@media (max-width: 770px) and (min-width: 0) {
+    .text__heading{
+        font-size: 32px;
+    }
+    .overview__path{
+        display: none;
+    }
+    .overview__container{
+        margin-top: 150px;
+    }
+    .overview__card{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card__text{
+        max-width: 100%;
+    }
+    .card__heading{
+        font-size: 32px;
+    }
+    .overview__logo__discuss{
+        margin-bottom: 30px;
+    }
+    .card__img{
+        max-width: 100%;
+    }
+    
+    /* second service */
+    .overview__card1{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    
+    .card__img1{
+        max-width: 100%;
+    }
+    
+    .card__text1{
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    /* third service */
+    .overview__card2{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .card__img2{
+        max-width: 100%;
+    }
+    
+    .card__text2{
+        max-width: 100%;
+        margin: 0;
+    }
+    
+}
