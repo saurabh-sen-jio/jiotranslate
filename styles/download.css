@@ -1,0 +1,118 @@
+
+.download {
+    background-color: #061951;
+    padding: 88px 64px;
+    margin: 5rem 8rem;
+    border-radius: 24px;
+}
+
+.section-content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.section-content h1 {
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.section-content p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #B5B5B5;
+}
+
+.section-content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .section-content input[type="text"] {
+    padding: 14px 20px;
+    width: 27.5rem;
+    margin-right: 22px;
+    background-color: transparent;
+    border-color: #B5B5B5;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+} */
+
+.mobile__number__input{
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    width: 27.5rem;
+    border: 2px solid #B5B5B5;
+}
+
+.mobile__number__input::placeholder {
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.section-content button {
+    background-color: #3535F3;
+    color: white;
+    border: none;
+    padding: 14px 24px 14px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: black;
+}
+
+
+/* media queries */
+
+/* sm(0-630) media query */
+@media (max-width: 630px) and (min-width: 0) {
+    
+}
+
+/* md(0-770) media query */
+@media (max-width: 770px) and (min-width: 0) {
+    .download{
+        margin: 0;
+        padding: 88px 10px;
+        border-radius: 0;
+    }
+    .section-content h1 {
+        font-size: 30px;
+    }
+    
+    .section-content p {
+        font-size: 16px;
+    }
+
+    .section-content form{
+        flex-direction: column;
+    }
+
+    .section-content{
+        max-width: max-content;
+    }
+
+    .mobile__number__input{
+        width: 100%;
+    }
+    .section-content button{
+        width: 100%;
+    }
+}
