@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../styles/services.css">
     <link rel="stylesheet" href="../styles/download.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <script src="../js/index.js" defer></script>
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 
@@ -21,19 +20,37 @@
             <header class="custom-header">
                 <div class="header-content">
                     <div class="logo-container">
-                        <!-- Replace this with your actual logo image -->
+                        <li class="list__style__none" onclick="handleOpenNav()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                                class="hidden hamburger" viewBox="0 0 16 16" id="hamburger">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </li>
                         <img src="../assets/logo.png" alt="Company Logo" height="40px">
                     </div>
                     <nav>
                         <ul class="header-menu">
                             <li><a href="#" class="header-link">Features</a></li>
                             <li><a href="#" class="header-link">Support</a></li>
+                            <li class="list__style__none" onclick="handleCloseNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                                    class="hidden cross" viewBox="0 0 16 16" id="cross">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </header>
+            <nav class="mobile__nav hidden" id="mobile__nav">
+                <li class="mobile__nav__link"><a href="#" class="nav__link">Features</a></li>
+                <hr class="horizontal__break">
+                <li class="mobile__nav__link"><a href="#" class="nav__link">Support</a></li>
+            </nav>
         </section>
-        <section class="hero">
+         <section class="hero">
             <div class="hero_textcontainer">
                 <h1 class="hero__text__heading">Connect Globally Talk Locally</h1>
                 <p class="hero__text__subheading">Break Language barriers with translation of any language into your native
@@ -93,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="download">
+        <!--<section class="download">
             <div class="section-content">
                 <h1>Download the app</h1>
                 <p>Simply enter your mobile number to get the exclusive download link</p>
@@ -149,8 +166,9 @@
                     </ul>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </main>
+    <script src="../js/index.js" defer></script>
 </body>
 
 </html>

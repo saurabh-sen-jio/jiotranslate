@@ -49,22 +49,20 @@
     height: 40px;
 }
 
-.hero__images {
-    margin: 340px 0;
-}
-
 .hero__images__container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .hero__bg {
     position: absolute;
     inset: unset;
     z-index: 10;
-    width: 1140px;
+    width: 100%;
+    max-width: 1140px;
 }
 
 .hero__iphone1 {
@@ -220,10 +218,7 @@
 
 .custom-header {
     background-color: #061951;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-top: 14px;
-    padding-bottom: 12px;
+    padding: 14px 36px 12px 36px;
     margin: 0px;
 }
 
@@ -233,8 +228,10 @@
     align-items: center;
 }
 
-.logo-container img {
-    height: 40px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .header-menu {
@@ -421,4 +418,83 @@ footer {
     list-style: none;
     display: flex;
     gap: 1rem;
+}
+
+.visible{
+    display: inline;
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+.list__style__none{
+    list-style-type: none;
+}
+
+.horizontal__break{
+    border: 1px solid #00000029;
+}
+
+.mobile__nav__link{
+    margin: 15px 10px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #141414;
+}
+
+/* media queries */
+
+/* sm(0-630) media query */
+@media (max-width: 630px) and (min-width: 0) {
+    .custom-header{
+        padding: 12px 18px;
+    }
+
+    .hamburger{
+        display: inline;
+    }
+
+    .header-link {
+        display: none;
+    }
+    .hero__iphone1{
+        left:10%;
+    }
+    .hero__iphone2{
+        right: 10%;
+    }
+}
+
+/* md(0-770) media query */
+@media (max-width: 770px) and (min-width: 0) {
+    .hero__images__container{
+        min-height: 60vh;
+    }
+    .hero_textcontainer{
+        padding: 0px 5px;
+    }
+    .hero__text__heading{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -2px;
+    }
+    .hero__text__subheading{
+        font-size: 14px;
+    }
+    .text__linkcontainer{
+        margin-top: 15px;
+    }
+    .hero__iphone1 {
+        height: 220px;
+    }
+    .hero__iphone2 {
+        height: 220px;
+    }
 }
