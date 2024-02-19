@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/contact-us.css">
+</head>
+
+<body>
+    <section class="header">
+        <header class="custom-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <li class="list__style__none" onclick="handleOpenNav()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                            class="hidden hamburger" viewBox="0 0 16 16" id="hamburger">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </li>
+                    <a href="/index.html">
+                        <img src="/assets/logo.png" alt="Company Logo" height="40px">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="#features" class="header-link">Features</a></li>
+                        <li><a href="/contact-us.html" class="header-link">Support</a></li>
+                        <li class="list__style__none" onclick="handleCloseNav()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+                                class="hidden cross" viewBox="0 0 16 16" id="cross">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <nav class="mobile__nav hidden" id="mobile__nav">
+            <li class="mobile__nav__link"><a href="#features" class="nav__link">Features</a></li>
+            <hr class="horizontal__break">
+            <li class="mobile__nav__link"><a href="/contact-us.html" class="nav__link">Support</a></li>
+        </nav>
+    </section>
+
+    <div class="contact-us " id="contact-us">
+        <h1 class="contact__heading">Get in touch with us for any help or suggestions</h1>
+        <div class="contact__us__container">
+            <div class="contact-us-img">
+                <img src="../assets/objects.png" alt="Contact Us">
+            </div>
+            <div class="contact-us-form">
+                <div class="col">
+                    <label>Full Name <span class="contact__us__required">*</span></label>
+                    <input type="text" id="name__input" value="">
+                    <p class="error__message hidden" id="name__error">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="white" />
+                            <path
+                                d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM15.71 14.29C15.8037 14.383 15.8781 14.4936 15.9289 14.6154C15.9797 14.7373 16.0058 14.868 16.0058 15C16.0058 15.132 15.9797 15.2627 15.9289 15.3846C15.8781 15.5064 15.8037 15.617 15.71 15.71C15.617 15.8037 15.5064 15.8781 15.3846 15.9289C15.2627 15.9797 15.132 16.0058 15 16.0058C14.868 16.0058 14.7373 15.9797 14.6154 15.9289C14.4936 15.8781 14.383 15.8037 14.29 15.71L12 13.41L9.71 15.71C9.61704 15.8037 9.50644 15.8781 9.38458 15.9289C9.26272 15.9797 9.13202 16.0058 9 16.0058C8.86799 16.0058 8.73729 15.9797 8.61543 15.9289C8.49357 15.8781 8.38297 15.8037 8.29 15.71C8.19628 15.617 8.12188 15.5064 8.07111 15.3846C8.02034 15.2627 7.99421 15.132 7.99421 15C7.99421 14.868 8.02034 14.7373 8.07111 14.6154C8.12188 14.4936 8.19628 14.383 8.29 14.29L10.59 12L8.29 9.71C8.1017 9.5217 7.99591 9.2663 7.99591 9C7.99591 8.7337 8.1017 8.4783 8.29 8.29C8.47831 8.1017 8.7337 7.99591 9 7.99591C9.26631 7.99591 9.5217 8.1017 9.71 8.29L12 10.59L14.29 8.29C14.4783 8.1017 14.7337 7.99591 15 7.99591C15.2663 7.99591 15.5217 8.1017 15.71 8.29C15.8983 8.4783 16.0041 8.7337 16.0041 9C16.0041 9.2663 15.8983 9.5217 15.71 9.71L13.41 12L15.71 14.29Z"
+                                fill="#F50031" />
+                        </svg>
+                        <span class="error__text">Full name is required</span>
+                    </p>
+                </div>
+                <div class="col mobile__number__container">
+                    <span id="country__code">+91</span>
+                    <label>Mobile Number <span class="contact__us__required">*</span></label>
+                    <input class="mobile-number" type="tel" id="mobile__input" value="" />
+                    <p class="error__message hidden" id="mobile__error">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="white" />
+                            <path
+                                d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM15.71 14.29C15.8037 14.383 15.8781 14.4936 15.9289 14.6154C15.9797 14.7373 16.0058 14.868 16.0058 15C16.0058 15.132 15.9797 15.2627 15.9289 15.3846C15.8781 15.5064 15.8037 15.617 15.71 15.71C15.617 15.8037 15.5064 15.8781 15.3846 15.9289C15.2627 15.9797 15.132 16.0058 15 16.0058C14.868 16.0058 14.7373 15.9797 14.6154 15.9289C14.4936 15.8781 14.383 15.8037 14.29 15.71L12 13.41L9.71 15.71C9.61704 15.8037 9.50644 15.8781 9.38458 15.9289C9.26272 15.9797 9.13202 16.0058 9 16.0058C8.86799 16.0058 8.73729 15.9797 8.61543 15.9289C8.49357 15.8781 8.38297 15.8037 8.29 15.71C8.19628 15.617 8.12188 15.5064 8.07111 15.3846C8.02034 15.2627 7.99421 15.132 7.99421 15C7.99421 14.868 8.02034 14.7373 8.07111 14.6154C8.12188 14.4936 8.19628 14.383 8.29 14.29L10.59 12L8.29 9.71C8.1017 9.5217 7.99591 9.2663 7.99591 9C7.99591 8.7337 8.1017 8.4783 8.29 8.29C8.47831 8.1017 8.7337 7.99591 9 7.99591C9.26631 7.99591 9.5217 8.1017 9.71 8.29L12 10.59L14.29 8.29C14.4783 8.1017 14.7337 7.99591 15 7.99591C15.2663 7.99591 15.5217 8.1017 15.71 8.29C15.8983 8.4783 16.0041 8.7337 16.0041 9C16.0041 9.2663 15.8983 9.5217 15.71 9.71L13.41 12L15.71 14.29Z"
+                                fill="#F50031" />
+                        </svg>
+                        <span class="error__text">Enter a valid mobile number</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <label>Email <span class="contact__us__required">*</span></label>
+                    <input type="email" id="email__input" value="" />
+                    <p class="error__message hidden" id="email__error">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="white" />
+                            <path
+                                d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM15.71 14.29C15.8037 14.383 15.8781 14.4936 15.9289 14.6154C15.9797 14.7373 16.0058 14.868 16.0058 15C16.0058 15.132 15.9797 15.2627 15.9289 15.3846C15.8781 15.5064 15.8037 15.617 15.71 15.71C15.617 15.8037 15.5064 15.8781 15.3846 15.9289C15.2627 15.9797 15.132 16.0058 15 16.0058C14.868 16.0058 14.7373 15.9797 14.6154 15.9289C14.4936 15.8781 14.383 15.8037 14.29 15.71L12 13.41L9.71 15.71C9.61704 15.8037 9.50644 15.8781 9.38458 15.9289C9.26272 15.9797 9.13202 16.0058 9 16.0058C8.86799 16.0058 8.73729 15.9797 8.61543 15.9289C8.49357 15.8781 8.38297 15.8037 8.29 15.71C8.19628 15.617 8.12188 15.5064 8.07111 15.3846C8.02034 15.2627 7.99421 15.132 7.99421 15C7.99421 14.868 8.02034 14.7373 8.07111 14.6154C8.12188 14.4936 8.19628 14.383 8.29 14.29L10.59 12L8.29 9.71C8.1017 9.5217 7.99591 9.2663 7.99591 9C7.99591 8.7337 8.1017 8.4783 8.29 8.29C8.47831 8.1017 8.7337 7.99591 9 7.99591C9.26631 7.99591 9.5217 8.1017 9.71 8.29L12 10.59L14.29 8.29C14.4783 8.1017 14.7337 7.99591 15 7.99591C15.2663 7.99591 15.5217 8.1017 15.71 8.29C15.8983 8.4783 16.0041 8.7337 16.0041 9C16.0041 9.2663 15.8983 9.5217 15.71 9.71L13.41 12L15.71 14.29Z"
+                                fill="#F50031" />
+                        </svg>
+                        <span class="error__text">Enter a valid email id</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <label>How can I help you ? <span class="contact__us__required">*</span></label>
+                    <textarea rows="3" class="input-form" type="text" id="msg__input" value=""></textarea>
+                    <p class="error__message hidden" id="msg__error">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="white" />
+                            <path
+                                d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM15.71 14.29C15.8037 14.383 15.8781 14.4936 15.9289 14.6154C15.9797 14.7373 16.0058 14.868 16.0058 15C16.0058 15.132 15.9797 15.2627 15.9289 15.3846C15.8781 15.5064 15.8037 15.617 15.71 15.71C15.617 15.8037 15.5064 15.8781 15.3846 15.9289C15.2627 15.9797 15.132 16.0058 15 16.0058C14.868 16.0058 14.7373 15.9797 14.6154 15.9289C14.4936 15.8781 14.383 15.8037 14.29 15.71L12 13.41L9.71 15.71C9.61704 15.8037 9.50644 15.8781 9.38458 15.9289C9.26272 15.9797 9.13202 16.0058 9 16.0058C8.86799 16.0058 8.73729 15.9797 8.61543 15.9289C8.49357 15.8781 8.38297 15.8037 8.29 15.71C8.19628 15.617 8.12188 15.5064 8.07111 15.3846C8.02034 15.2627 7.99421 15.132 7.99421 15C7.99421 14.868 8.02034 14.7373 8.07111 14.6154C8.12188 14.4936 8.19628 14.383 8.29 14.29L10.59 12L8.29 9.71C8.1017 9.5217 7.99591 9.2663 7.99591 9C7.99591 8.7337 8.1017 8.4783 8.29 8.29C8.47831 8.1017 8.7337 7.99591 9 7.99591C9.26631 7.99591 9.5217 8.1017 9.71 8.29L12 10.59L14.29 8.29C14.4783 8.1017 14.7337 7.99591 15 7.99591C15.2663 7.99591 15.5217 8.1017 15.71 8.29C15.8983 8.4783 16.0041 8.7337 16.0041 9C16.0041 9.2663 15.8983 9.5217 15.71 9.71L13.41 12L15.71 14.29Z"
+                                fill="#F50031" />
+                        </svg>
+                        <span class="error__text">Please provide a brief description</span>
+                    </p>
+                </div>
+                <h6>By submitting this form you confirm that you have read & agree with our
+                    <span class="blue-bold">Privacy Policy</span>.
+                </h6>
+                <button class="submit-btn" id="submit__button" onclick="handleContactSubmit()">Submit</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="thanks__container hidden" id="form__submitted">
+        <div class="form-submitted">
+            <img src="../assets/translate.png" alt="From Submitted">
+            <div class="thanks">
+                <h3>Thank you for your interest</h3>
+                <h6>Our team will get back to you soon</h6>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <ul>
+                    <a href="#" style="text-decoration: none;"><li class="bold">Company</li></a>
+                    <a href="#" style="text-decoration: none;"><li class="footer-item">About</li></a>
+                    <a href="#features" style="text-decoration: none;"><li class="footer-item">Features</li></a>
+                    <a href="/contact-us.html" style="text-decoration: none;"><li class="footer-item">Support</li></a>
+                </ul>
+            </div>
+            <div class="footer-content right-section">
+                <div class="right-top-section">
+                    <span class="bold">Connect with us</span>
+                    <div class="img-section">
+                        <a href="https://www.instagram.com/jiotranslate/" target="_blank">
+                            <li><img src="/assets/instagram.png" alt="social-logo" /></li>
+                        </a>
+                        <a href="https://www.linkedin.com/company/jiotranslate/?viewAsMember=true" target="_blank">
+
+                            <li><img src="/assets/linkedin.png" alt="social-logo" /></li>
+                        </a>
+                        <a href="https://twitter.com/JioTranslate" target="_blank">
+
+                            <li><img src="/assets/twitter.png" alt="social-logo" /></li>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-bottom-section">
+                    <span class="bold">Download the app</span>
+                    <div class="get-it-section">
+                        <li><img src="/assets/ios-badge.png" alt="google-play-badge" width="100px" /></li>
+                        <li><img src="/assets/google-play-badge.png" alt="google-play-badge" width="112px" /></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="bottom-footer">
+            <div class="bf-left">
+                <img src="/assets/group.png" width="30px" />
+                <span>Copyright © 2024 Reliance Jio Infocomm Ltd. All rights reserved</span>
+            </div>
+            <div class="bf-right">
+                <ul>
+                    <li>Regulatory</li>
+                    <li>|</li>
+                    <a href="/privacy-policy.html" style="text-decoration: none;">
+
+                        <li>Policies</li>
+                    </a>
+                    <li>|</li>
+                    <a href="/t-and-c.html" style="text-decoration: none;">
+                        <li>Terms & Conditions</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

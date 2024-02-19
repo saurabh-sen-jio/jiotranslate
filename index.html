@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jio Translate</title>
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/hero.css">
-    <link rel="stylesheet" href="../styles/services.css">
-    <link rel="stylesheet" href="../styles/download.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/services.css">
+    <link rel="stylesheet" href="/styles/download.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -27,12 +27,14 @@
                                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                             </svg>
                         </li>
-                        <img src="../assets/logo.png" alt="Company Logo" height="40px">
+                        <a href="/index.html">
+                            <img src="/assets/logo.png" alt="Company Logo" height="40px">
+                        </a>
                     </div>
                     <nav>
                         <ul class="header-menu">
-                            <li><a href="#" class="header-link">Features</a></li>
-                            <li><a href="#" class="header-link">Support</a></li>
+                            <li><a href="#features" class="header-link">Features</a></li>
+                            <li><a href="/contact-us.html" class="header-link">Support</a></li>
                             <li class="list__style__none" onclick="handleCloseNav()">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
                                     class="hidden cross" viewBox="0 0 16 16" id="cross">
@@ -45,9 +47,9 @@
                 </div>
             </header>
             <nav class="mobile__nav hidden" id="mobile__nav">
-                <li class="mobile__nav__link"><a href="#" class="nav__link">Features</a></li>
+                <li class="mobile__nav__link"><a href="#features" class="nav__link">Features</a></li>
                 <hr class="horizontal__break">
-                <li class="mobile__nav__link"><a href="#" class="nav__link">Support</a></li>
+                <li class="mobile__nav__link"><a href="/contact-us.html" class="nav__link">Support</a></li>
             </nav>
         </section>
         <section class="hero">
@@ -58,21 +60,21 @@
                     tongue.</p>
                 <div class="text__linkcontainer">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/google-play-badge.png" alt="google-play-badge" class="link__store">
+                        <img src="/assets/google-play-badge.png" alt="google-play-badge" class="link__store">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/ios-badge.png" alt="app-store-badge" class="link__store"></a>
+                        <img src="/assets/ios-badge.png" alt="app-store-badge" class="link__store"></a>
                 </div>
             </div>
             <div class="hero__images">
                 <div class="hero__images__container">
-                    <img src="../assets/herobg.png" alt="hero bg" class="hero__bg">
-                    <img src="../assets/iphone1.png" alt="iphone" class="hero__iphone1">
-                    <img src="../assets/iphone2.png" alt="iphone" class="hero__iphone2">
+                    <img src="/assets/herobg.png" alt="hero bg" class="hero__bg">
+                    <img src="/assets/iphone1.png" alt="iphone" class="hero__iphone1">
+                    <img src="/assets/iphone2.png" alt="iphone" class="hero__iphone2">
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="features">
             <div class="services__text">
                 <p class="text__heading">We empower <span class="heading_span">global communication</span> by <br />
                     breaking down language barriers</p>
@@ -80,22 +82,22 @@
                     tongue.</p>
             </div>
             <div class="services__overview">
-                <img src="../assets/services-path.png" alt="hero bg" class="overview__path" />
+                <img src="/assets/services-path.png" alt="hero bg" class="overview__path" />
 
                 <div class="overview__container">
                     <div class="overview__card">
                         <div class="card__text">
-                            <img src="../assets/discuss.png" alt="hero bg" class="overview__logo__discuss" />
+                            <img src="/assets/discuss.png" alt="hero bg" class="overview__logo__discuss" />
                             <h1 class="card__heading">Discourse in your language</h1>
                             <h5 class="card__subheading">Engage in meaningful conversations and interact in your
                                 preferred language.</h5>
                         </div>
-                        <img src="../assets/discuss_svg.png" alt="discourse bg" class="card__img" />
+                        <img src="/assets/discuss_svg.png" alt="discourse bg" class="card__img" />
                     </div>
                     <div class="overview__card1">
-                        <img src="../assets/conv_versatility_img.png" alt="conversation bg" class="card__img1 " />
+                        <img src="/assets/conv_versatility_img.png" alt="conversation bg" class="card__img1 " />
                         <div class="card__text1">
-                            <img src="../assets/conversation.png" alt="hero bg" class="overview__logo__conv" />
+                            <img src="/assets/conversation.png" alt="hero bg" class="overview__logo__conv" />
                             <h1 class="card__heading">Conversational versatility</h1>
                             <h5 class="card__subheading">Initiate calls in your language with anyone for an inclusive
                                 exchange.</h5>
@@ -103,17 +105,17 @@
                     </div>
                     <div class="overview__card2">
                         <div class="card__text2">
-                            <img src="../assets/global.png" alt="hero bg" class="overview__logo__global" />
+                            <img src="/assets/global.png" alt="hero bg" class="overview__logo__global" />
                             <h1 class="card__heading">Speak the global language</h1>
                             <h5 class="card__subheading">Elevate your interactions with clear communication in your
                                 language.</h5>
                         </div>
-                        <img src="../assets/global_lang_img.png" alt="global lang bg" class="card__img2" />
+                        <img src="/assets/global_lang_img.png" alt="global lang bg" class="card__img2" />
                     </div>
                 </div>
             </div>
         </section>
-        <section class="download">
+        <!-- <section class="download">
             <div class="section-content">
                 <h1>Download the app</h1>
                 <p>Simply enter your mobile number to get the exclusive download link</p>
@@ -123,31 +125,39 @@
                     <button type="submit">Send SMS</button>
                 </form>
             </div>
-        </section>
+        </section> -->
         <footer>
             <div class="footer">
                 <div class="footer-content">
                     <ul>
-                        <li class="bold">Company</li>
-                        <li class="footer-item">About</li>
-                        <li class="footer-item">Features</li>
-                        <li class="footer-item">Support</li>
+                        <a href="#" style="text-decoration: none;"><li class="bold">Company</li></a>
+                        <a href="#" style="text-decoration: none;"><li class="footer-item">About</li></a>
+                        <a href="#features" style="text-decoration: none;"><li class="footer-item">Features</li></a>
+                        <a href="/contact-us.html" style="text-decoration: none;"><li class="footer-item">Support</li></a>
                     </ul>
                 </div>
                 <div class="footer-content right-section">
                     <div class="right-top-section">
                         <span class="bold">Connect with us</span>
                         <div class="img-section">
-                            <li><img src="../assets/instagram.png" alt="social-logo" /></li>
-                            <li><img src="../assets/linkedin.png" alt="social-logo" /></li>
-                            <li><img src="../assets/twitter.png" alt="social-logo" /></li>
+                            <a href="https://www.instagram.com/jiotranslate/" target="_blank">
+                                <li><img src="/assets/instagram.png" alt="social-logo" /></li>
+                            </a>
+                            <a href="https://www.linkedin.com/company/jiotranslate/?viewAsMember=true" target="_blank">
+
+                                <li><img src="/assets/linkedin.png" alt="social-logo" /></li>
+                            </a>
+                            <a href="https://twitter.com/JioTranslate" target="_blank">
+
+                                <li><img src="/assets/twitter.png" alt="social-logo" /></li>
+                            </a>
                         </div>
                     </div>
                     <div class="right-bottom-section">
                         <span class="bold">Download the app</span>
                         <div class="get-it-section">
-                            <li><img src="../assets/ios-badge.png" alt="google-play-badge" width="100px" /></li>
-                            <li><img src="../assets/google-play-badge.png" alt="google-play-badge" width="112px" /></li>
+                            <li><img src="/assets/ios-badge.png" alt="google-play-badge" width="100px" /></li>
+                            <li><img src="/assets/google-play-badge.png" alt="google-play-badge" width="112px" /></li>
                         </div>
                     </div>
                 </div>
@@ -157,22 +167,27 @@
 
             <div class="bottom-footer">
                 <div class="bf-left">
-                    <img src="../assets/group.png" width="30px" />
+                    <img src="/assets/group.png" width="30px" />
                     <span>Copyright © 2024 Reliance Jio Infocomm Ltd. All rights reserved</span>
                 </div>
                 <div class="bf-right">
                     <ul>
                         <li>Regulatory</li>
                         <li>|</li>
-                        <li>Policies</li>
+                        <a href="/privacy-policy.html" style="text-decoration: none;">
+
+                            <li>Policies</li>
+                        </a>
                         <li>|</li>
-                        <li>Terms & Conditions</li>
+                        <a href="/t-and-c.html" style="text-decoration: none;">
+                            <li>Terms & Conditions</li>
+                        </a>
                     </ul>
                 </div>
             </div>
         </footer>
     </main>
-    <script src="../js/index.js" defer></script>
+    <script src="/js/index.js" defer></script>
 </body>
 
 </html>

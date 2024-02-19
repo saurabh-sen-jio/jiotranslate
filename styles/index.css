@@ -134,7 +134,7 @@
 }
 
 .mobile__nav__link{
-    margin: 15px 10px;
+    padding: 15px 10px;
     list-style-type: none;
     font-size: 16px;
     font-weight: 700;
